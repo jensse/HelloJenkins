@@ -14,14 +14,22 @@ import as.invenio.jenkins.HelloJenkins;
 
 public class TestHelloJenkins {
 	
+	
+	/**
+	 * The ultimate Hello Jenkins test ;)
+	 */
 	@Test
 	public void testHelloJenkins(){
 		Assert.assertEquals("Hello Jenkins", HelloJenkins.say());
 	}
+	
+	
+	/**
+	 * Simple test to ensure that the correct properties file is picked up
+	 * when running test.
+	 */
 	@Test
 	public void testTestProperties(){
-		System.out.println(this.getClass().getResourceAsStream("config.properties"));
-	//	System.out.println(ResourceBundle.getBundle("config.properties"));
 		Properties prop = new Properties();
 		try {
 			prop.load(this.getClass().getClassLoader().getResourceAsStream("config.properties"));
@@ -29,9 +37,7 @@ public class TestHelloJenkins {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(prop.getProperty("test"));
-		System.out.println(this.getClass()
-				.getResourceAsStream
-				("config.properties"));
+		Assert.assertEquals("test.resource", prop.getProperty("test"));
+	
 	}
 }
