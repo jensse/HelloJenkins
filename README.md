@@ -9,12 +9,13 @@ I have used Ubuntu Server on [VirtualBox](https://www.virtualbox.org/). Currentl
 
 ## Innstaling Jenkins on Ubuntu.
 
-Execute the code below, instructions from [jenkins-ci.org] (https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu)
+Execute the code below, instructions from
+[jenkins-ci.org] (https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu).
 	
 	wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 	sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 	sudo apt-get update
-	sudo apt-get install  java-6-openjdk git-core
+	sudo apt-get install  java-6-openjdk git-core #(openjdk does not require registration) 
 	sudo apt-get install  jenkins 
 	
 	
@@ -23,7 +24,7 @@ Execute the code below, instructions from [jenkins-ci.org] (https://wiki.jenkins
 #### JDK installation
 
 *	__Name__: java-6-openjdk
-*	__JAVA_HOME__: /usr/lib/jvm/java-6-openjdk/ (no.. I don't use the Oracle one).
+*	__JAVA_HOME__: /usr/lib/jvm/java-6-openjdk/
 	
  
 ## Setting up the automatic build process.
