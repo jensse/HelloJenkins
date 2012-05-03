@@ -4,7 +4,7 @@ Description
 The intent of this app is to get one up and running with [Jenkins](http://jenkins-ci.org/), quick
 and hopefully paninless.
 
-I have used [VirtualBox](https://www.virtualbox.org/) Currently this installation is out of scope. 
+I have used Ubuntu Server on [VirtualBox](https://www.virtualbox.org/). Currently this installation is out of scope. 
 
 
 ## Innstaling Jenkins on Ubuntu.
@@ -27,6 +27,8 @@ Execute the code below, instructions from [jenkins-ci.org] (https://wiki.jenkins
 	
  
 ## Setting up the automatic build process.
+
+//TODO should add a screen-shot here.
 
 
 ## Project  in Jenkins##
