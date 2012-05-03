@@ -1,15 +1,11 @@
 package as.invenio.jenkins;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.ResourceBundle;
 
 import junit.framework.Assert;
 
 import org.junit.Test;
-
-import as.invenio.jenkins.HelloJenkins;
 
 
 public class TestHelloJenkins {
