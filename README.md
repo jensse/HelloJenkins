@@ -3,12 +3,13 @@ Description
 
 The intent of this app is to get one up and running with [Jenkins](http://jenkins-ci.org/), quick
 and hopefully paninless.
-I have used VirtualBox (the installation of this is out of scope). 
+
+I have used [VirtualBox](https://www.virtualbox.org/) Currently this installation is out of scope. 
 
 
-## Innstaling Jenkins on ubuntu.
+## Innstaling Jenkins on Ubuntu.
 
-	Execute the following code:
+Execute the code below, instructions from [jenkins-ci.org] (https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 	
 	wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 	sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
@@ -19,10 +20,10 @@ I have used VirtualBox (the installation of this is out of scope).
 	
 ### Jenkins configuration
 	
-#### JDK
+#### JDK installation
 
-*	JDK installations: Name ; java-6-openjdk
-*	JDK installations: JAVA_HOME ; /usr/lib/jvm/java-6-openjdk/ 
+*	__Name__: java-6-openjdk
+*	__JAVA_HOME__: /usr/lib/jvm/java-6-openjdk/ (no.. I don't use the Oracle one).
 	
  
 ## Setting up the automatic build process.
@@ -30,8 +31,8 @@ I have used VirtualBox (the installation of this is out of scope).
 
 ## Project  in Jenkins##
 
-*	__Set projectname:__ HelloJenkins
-*	__Check:__ Discard Old Builds
-*	__Source Code Management (Select):__ git
-*	__Repository URL:__ git@github.com:jensse/HelloJenkins.git
-*	__Goals and options:__ test package
+*	__Set projectname__: HelloJenkins
+*	__Check__: Discard Old Builds
+*	__Source Code Management (Select)__: git
+*	__Repository URL__: git@github.com:jensse/HelloJenkins.git
+*	__Goals and options__: test package
