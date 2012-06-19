@@ -10,7 +10,11 @@ I have used Ubuntu Server on [VirtualBox](https://www.virtualbox.org/). I have l
 
 ## Innstaling Jenkins on Ubuntu.
 
-Execute the code below, instructions from
+This steps require you to login to the server and _su_ to the jenkins user.
+
+### Install Jenkins.
+
+Login to the ubuntu server and execute the code below, instructions from
 [jenkins-ci.org] (https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu).
 	
 	wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
@@ -20,10 +24,6 @@ Execute the code below, instructions from
 	sudo apt-get install  jenkins 
 	
 	
-### Jenkins configuration
-
-This steps require you to login to the server and _su_ to the jenkins user.
-
 	
 ## Installing ssh private key.
 
@@ -61,7 +61,7 @@ There is more to the git installation process, this is done after the first buil
 Git was installed initially using _apt-get install_.
 
 *	__Name__: default
-*	__	Path to Git executable__:/usr/bin/git
+*	__Path to Git executable__:/usr/bin/git
 
 ### Maven installations
 
@@ -107,6 +107,6 @@ Set git credential information:
 
 _Apperently this is now configurable using the __Git plugin__ section of system configuration_.
 	
-login and rerun the build process.
+login and rerun the build process. Hopefully all is sunshine ;-)
 	
 
