@@ -1,5 +1,6 @@
 Description
 ===========
+Date: 2012.06.19
 
 The intent of this app is to get one up and running with [Jenkins](http://jenkins-ci.org/), quick
 and hopefully paninless.
