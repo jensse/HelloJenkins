@@ -20,7 +20,7 @@ Login to the ubuntu server and execute the code below, instructions from
 	wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 	sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 	sudo apt-get update
-	sudo apt-get install  java-6-openjdk git-core #(openjdk does not require registration) 
+	sudo apt-get install  openjdk-6-jdk git-core #(openjdk does not require registration) 
 	sudo apt-get install  jenkins 
 	
 	
